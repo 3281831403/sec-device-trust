@@ -1,7 +1,9 @@
 """Device trust scoring package."""
 
 from .score import (
+    ALLOWED_SIGNALS,
     MAX_SCORE,
+    RISK_PENALTIES,
     add_signal,
     decay,
     device_batch,
@@ -13,7 +15,9 @@ from .score import (
 )
 
 __all__ = [
+    "ALLOWED_SIGNALS",
     "MAX_SCORE",
+    "RISK_PENALTIES",
     "add_signal",
     "decay",
     "device_batch",
